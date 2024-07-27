@@ -1,0 +1,2 @@
+The dataset contains data about usage of customers, it contains the amount charged to the customers as well as the the monthly revenue and the monthly minutes per customer,
+whethere they own computers and if they have credit cards.

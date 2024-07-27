@@ -1,0 +1,4 @@
+We were assigned to choose an algorithm to segment customers based on similar characteristics. After the dataset was selected ( we chose the telecom industry),
+we tested this data into four different algorithms: K means, MiniBatchKmeans, Gaussian mixture, mean shift, the results were then plotted on a graph. In the code,
+we had included two scores silhouette and Davies Bouldin the most successful algorithm will have a higher silhouette and lower Davies Bouldin score. Based on our results
+we have concluded that K Means is the best algorithm for our selected dataset

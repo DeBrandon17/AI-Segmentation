@@ -1,0 +1,56 @@
+K means is a type of unsupervised learning which involves putting unlabelled data into clusters.
+
+1. Is to import the libraries needed, this is a common step for all types of algorithms.
+2. Then we need to read the data set using pandas library, and assign the data to a variable
+3. We have to explore the data using data info seeing what is the data we are dealing with the number of columns, and rows, also the max data the median data and the minimum data
+4. After that we need to make any boolean data into 1 and 0's using label encoding
+5. Then we need to plot the data into a graph to see any correlation, over here we are using a heatmap to determine the correlation
+6. Then we need to standardize the data so it's in the range of 0 and 1 so they all are in the same range
+7.  Then we have to determine how many clusters should be in the algorithm, we do this using WCSS, and then we need to graph it, this is known as the elbow method, where the bend appears is the number of clusters needed
+8. Then we fit our model to our specific dataset
+9. Finally we identify what are the clusters separated based of by seeing the average values for each cluster and parameters
+
+Gaussian Mixture is a type of unsupervised learning which is comprised of several Gaussians
+Import libraries
+Import the dataset and readit
+Check the data
+Clean the data
+Average it out
+Check the outlier data ( data which is far outside the average), and remove it
+Then we need to check the factorability, which is whether we can find factors in the dataset. (this is similar to correlation)
+We perform a Bartlett test to see the p-value and if 0 the data is statistically significant, indicating that the observed correlation matrix is not an identity matrix
+Then we do a KMO test to see the qualitative range of data we have
+Then we choose the number of factors using eign values using a graph
+We also see the variance of factors
+Then we use a factor loading graph The factor loading is a matrix that shows the relationship of each variable to the underlying factor..
+Then we see the variance of each factor
+Then we create a data frame with the factors we found earlier (eg:10)
+Then we use the GMM model but first, we need to choose the number of clusters using our data frame factors and "bic"
+Then we output the result after clustering
+Finally, we label each cluster based on their standout feature
+
+Meanshift
+Import libraries
+Import the dataset and readit
+Check the data - standardize and normalize the data
+Clean the data
+Average it out
+use estimate bandwidth to find out the estimated number of clusters
+get the silhouette score and Davies Bouldin score for the number of clusters given by estimate bandwidth function
+fit the data to pca to find the primary axes which will be used to  graph and segment it
+finally label each cluster
+
+MiniKMeans
+Import libraries
+Import the dataset and readit
+Check the data - standardize and normalize the data
+Clean the data
+Average it out
+test the silhouette and Davies Bouldin score for several clusters and pick the best one 
+fit the data to PCA to find the primary axes which will be used to  graph and segment it 
+
+Sillhouette and Davies Bouldin score
+meanshift:silhouette = 0.229,Davies Bouldin = 1.629 
+gaussian mixture:silhouette =0.21 ,Davies Bouldin = 1.52  
+kmeans:silhouette = 0.25,Davies Bouldin = 1.425
+minibatchkmeans:silhouette =0.21 ,Davies Bouldin = 1.9
